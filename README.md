@@ -79,6 +79,8 @@ I'll start by analysing the time complexity and then I'll move into the space co
 * Sorting words will create an array and a string for each word making it of linear complexity O(2n)~O(n)
 * Creating groups of anagrams will be one entry per word, growing the Map in a linear complexity O(n)
 
+> According to the four rules of Big O, the space complexity equates to O(n logn).
+
 ### Improvements
 Given more time I'd like to:
 * Improve the use experience by interacting with the user for next steps rather than one time execution as is now.
