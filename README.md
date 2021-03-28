@@ -90,5 +90,10 @@ Start by ensuring you have Node14 and npm6 installed in your machine. Then in th
 > cd <path-to-src-code>
 > npm i
 > npm run tests
-> node . specs/Data/example1.txt 
+> node . example-files/example2.txt
+```
+
+Considering that the output might not fit your console, you could
+```
+> node . example-files/example2.txt > output.file
 ```

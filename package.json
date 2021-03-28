@@ -4,7 +4,7 @@
   "description": "this is my stuff",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/.bin/mocha --exit --timeout 10000 \"./specs/*.js\""
+    "tests": "node ./node_modules/.bin/mocha --exit --timeout 10000 \"./tests/*.js\""
   },
   "repository": {
     "type": "git",
