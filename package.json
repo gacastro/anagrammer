@@ -1,0 +1,25 @@
+{
+  "name": "what-do-u-mean-by-package",
+  "version": "1.0.0",
+  "description": "this is my stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/.bin/mocha --exit --timeout 10000 \"./specs/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gacastro/find-the-anagrams.git"
+  },
+  "author": "Goncalo de Castro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gacastro/find-the-anagrams/issues"
+  },
+  "homepage": "https://github.com/gacastro/find-the-anagrams#readme",
+  "type": "module",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "sinon": "^10.0.0"
+  }
+}
