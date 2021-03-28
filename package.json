@@ -1,22 +1,26 @@
 {
-  "name": "what-do-u-mean-by-package",
+  "name": "anagrammer",
   "version": "1.0.0",
-  "description": "this is my stuff",
+  "description": "Program to find anagrams in a file",
   "main": "index.js",
   "scripts": {
     "tests": "node ./node_modules/.bin/mocha --exit --timeout 10000 \"./tests/*.js\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gacastro/find-the-anagrams.git"
+    "url": "git+https://github.com/gacastro/anagrammer"
   },
   "author": "Goncalo de Castro",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gacastro/find-the-anagrams/issues"
+    "url": "https://github.com/gacastro/anagrammer/issues"
   },
-  "homepage": "https://github.com/gacastro/find-the-anagrams#readme",
+  "homepage": "https://github.com/gacastro/anagrammer#readme",
   "type": "module",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^8.3.2",
