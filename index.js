@@ -31,8 +31,8 @@ const run = () => {
 
     const anagrammer = new Anagrammer(sortWord);
 
-    // do not use the shorthand lineInterface.on('line', anagrammer.add;
-    // In arrow functions, 'this' scope is inherited from the execution context. As such, we cannot use the private field in the context of the event handler
+    // do not use the shorthand lineInterface.on('line', anagrammer.add);
+    // In arrow functions, 'this' scope is inherited from the execution context. As such, we cannot use the class private field in the context of the event handler
     lineInterface.on('line', (word) => anagrammer.add(word));
     lineInterface.on('close', () => anagrammer.print());
 }

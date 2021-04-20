@@ -1,5 +1,10 @@
+# Start of custom rules
 
-# Created by https://www.toptal.com/developers/gitignore/api/node,visualstudiocode
+example-files/big-big.file
+
+# End of custom rules
+
+# Start of rules created by https://www.toptal.com/developers/gitignore/api/node,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,visualstudiocode
 
 ### Node ###

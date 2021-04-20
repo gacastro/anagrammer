@@ -47,19 +47,4 @@ describe('When a path is given to validate', function () {
                 .equal('The location of the file to process for anagrams does not exist');
         });
     });
-
-    describe('And its a file bigger than 10Mb', function () {
-        before(function () {
-            filePathValidation = validatePath('example-files/oversized.file');
-        });
-
-        it('should return its an invalid path', function () {
-            expect(filePathValidation.valid).to.be.false;
-        });
-
-        it('should return an invalid reason', function () {
-            expect(filePathValidation.invalidReason).to
-                .equal('The file to process is bigger than the allowed limit of 10MB');
-        });
-    });
 });
