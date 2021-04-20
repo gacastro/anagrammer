@@ -17,6 +17,7 @@ There is a file containing one word per line. The program takes the path to the 
   - [The idea](#the-idea)
   - [The solution](#the-solution)
     - [Input/Output considerations](#inputoutput-considerations)
+      - [Secret sauce](#secret-sauce)
     - [Data structures](#data-structures)
     - [Sorting words](#sorting-words)
     - [Error handling](#error-handling)
@@ -41,6 +42,11 @@ While implementing the solution some considerations were made:
    * In theory, larger files could be processed. But its a good practice for a system to have a limit on its inputs.
    * The size could have been determined by load testing the program for several sizes and choosing the size that is 30% bellow the point of failure. But the approcach taken was to consider a size restriction that most of us are used to. The maximum size that most email clients accecpt for an attachment.
 * The anagram's group of words output will not containt duplicates. For instance, the program will produce `fun, unf, nuf` rather than `fun, fun, unf, nuf, fun`
+
+#### Secret sauce
+Althought we just said that there is a restriction on the file size, its good to test what will happen for big big inputs. So if you're curious to see what will happen, switch over to the `big-files` branch, set your working directory to be the root folder, run `node ./generate-files.js` to generate a `1.5Gb` file and then `node . example-files/big-big.file`
+
+If you wish to generate different file sizes, you can change the generate files script to either increase `numberLines` or the amount of characters to be written into the file.
 
 ### Data structures
 The program's idea is to group anagrams, and in order to do this, we need to identify the anagram of a group so we can add more words to it. In other words we need JavaScript's **HashMap(Map)** where the key is the group's sorted anagram and the value is the actual group of words. And considering the main activity of the program will be to search and insert, this structure offers `O(1)` complexity for these operations.
